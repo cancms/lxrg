@@ -43,7 +43,7 @@ members_teacher:
     group: "teacher"
     role: "副教授"
     email: "yang123jx@njust.edu.cn"
-    avatar: "images/members/yang-jin-xiang.jpg"
+    avatar: "images/members/yang-jin-xiang.png"
     detail_link: "https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=QR7IctYsYKr0kSAohKpiBQ==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw="
 
     description: |
@@ -68,7 +68,7 @@ members_teacher:
     group: "teacher"
     role: "副教授"
     email: "omegaliuj@gmail.com"
-    avatar: "images/members/liu-jia.jpg"
+    avatar: "images/members/liu-jia.png"
     detail_link: "https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=rZgYIhJ9JIyPRyrAYpBP3g==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw="
 
     description: |
