@@ -1,0 +1,100 @@
+{{ partial "blocks/header_banner" .  }}
+
+
+
+
+<section id="home_team_members" class="home-section home-team-members">
+  <div class="container content-wrapper">
+
+
+    <div class="row">
+      <div class="m-group-title">首席科学家</div>
+    </div>
+    {{ range site.Data.members.members_manager }}
+    <div class="row" >
+          <div class="col-3 col-md-2   "  data-fade="up">
+
+              <div class="m-image-wrap">
+                  <div class="m-image original">
+                    {{with .detail_link}} <a href="{{ . }}" target="_blank">  {{end}}
+                          <img src="{{ .avatar | relURL }}" alt="{{ .name }}">
+                    {{with .detail_link}}  </a> {{end}}
+                  </div>
+                  <div class="m-image bg-mask">  </div>
+              </div>
+
+          </div>
+          <div class="col-9 col-md-10  "  data-fade="up">
+
+              <div class="m-intro">
+                  <h3>
+                    {{with .detail_link}} <a href="{{ . }}" target="_blank">  {{end}}
+                    {{ .name }} <span class="m-role">{{ with .role }}{{ . }}{{ end }}</span>
+                    {{with .detail_link}}  </a> {{end}}
+                  </h3>
+                  <div class="desc">{{ .description | markdownify }}</div>
+                  <div class="lead-icon-item">
+                    <div class="icon-wrap">
+                      <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="icon-text"> {{ .email | markdownify }}</div>
+                  </div>
+              </div>
+
+
+          </div>
+    </div>
+    {{ end }}
+
+
+
+
+    <div class="row">
+      <div class="m-group-title" style="margin-top: 5rem;">教师队伍</div>
+    </div>
+    <div class="row">
+    {{ range site.Data.members.members_teacher }}
+
+          <div class="col-3 col-md-2  person-item "  data-fade="up">
+
+              <div class="m-image-wrap">
+                  <div class="m-image original">
+                    {{with .detail_link}} <a href="{{ . }}" target="_blank">  {{end}}
+                          <img src="{{ .avatar | relURL }}" alt="{{ .name }}">
+                    {{with .detail_link}}  </a> {{end}}
+                  </div>
+                  <div class="m-image bg-mask">  </div>
+              </div>
+
+          </div>
+          <div class="col-9 col-md-4   person-item "  data-fade="up">
+
+              <div class="m-intro">
+                  <h3>
+                    {{with .detail_link}} <a href="{{ . }}" target="_blank">  {{end}}
+                    {{ .name }} <span class="m-role">{{ with .role }}{{ . }}{{ end }}</span>
+                    {{with .detail_link}}  </a> {{end}}
+                  </h3>
+                  <div class="desc">{{ .description | markdownify }}</div>
+                  <div class="lead-icon-item">
+                    <div class="icon-wrap">
+                      <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="icon-text"> {{ .email | markdownify }}</div>
+                  </div>
+              </div>
+          </div>
+
+    {{ end }}
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+</section>

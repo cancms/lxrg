@@ -1,0 +1,53 @@
+{{- define "main" -}}
+
+
+{{/* Query */}}
+{{- $query := site.Data.publications -}}
+{{- $selected_publications := sort $query.selected_publications "year" "desc" -}}
+
+{{ partial "blocks/header_banner" .  }}
+
+
+<section {{with .Params.page_id}}id="{{.}}"{{end}} class="home-section  common-page-wrap page-publication-list">
+   <div class="container content-wrapper">
+      <div class="row">
+    <div class="col-12">
+
+      {{ with .Content }}
+      <div class="article-style">{{ . }}</div>
+      {{ end }}
+
+
+      <div class="publication-type ">
+        Selected Publications
+      </div>
+      <div id="container-publications">
+        {{ range $index, $item := $selected_publications }}
+
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-pub year-{{ $item.year | time.Format "2006" }}">
+          {{ partial "views/pub_item.html" (dict
+              "page" .
+              "index" $index
+              "item" $item
+          )}}
+        </div>
+
+        {{ end }}
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+   </div>
+
+</section>
+
+
+
+{{- end -}}
+
+
+

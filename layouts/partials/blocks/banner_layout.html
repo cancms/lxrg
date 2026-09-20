@@ -1,0 +1,14 @@
+
+
+
+{{ partial "blocks/header_banner" .  }}
+
+
+
+<section {{with .Params.page_id}}id="{{.}}"{{end}} class="home-section  common-page-wrap ">
+  <div class="container content-wrapper">
+    {{with .Content}}{{  . }}{{ end }}
+  </div>
+</section>
+
+

@@ -1,0 +1,93 @@
+<script>
+{{/*
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent;
+    transition: background-color .3s ease, box-shadow .3s ease;
+}
+
+  // 滚动后加的类
+  #header.xg {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  }
+
+  <header id="header" class="head"> </header>
+
+  */}}
+// 导航栏滚动变色， 窗口缩放重新判断
+function bindHeaderScroll() {
+    const navId = 'navbar-main';
+    if (window.innerWidth > 1199) {
+      // 绑定：scroll 事件，属于 headerFx 命名空间
+        $(window).off('scroll.headerFx').on('scroll.headerFx', function () {
+            $(`#${navId}`).toggleClass('xg', $(this).scrollTop() > 0);
+        });
+    } else {
+      // 解绑：只移除 headerFx 命名空间下的 scroll
+        $(window).off('scroll.headerFx');
+        $(`#${navId}`).removeClass('xg');
+    }
+}
+
+
+// 元素滚动淡入（复刻 AOS 的 fade-up）
+function scrollFadeUp () {
+    var $els = $('[data-fade]');
+    if (!$els.length) return;
+
+    var offset = 0;      // 进入视口就触发
+    var ticking = false;
+
+    function check() {
+        var winTop = $(window).scrollTop();
+        var winBottom = winTop + $(window).height();
+
+        $els.each(function () {
+            var $el = $(this);
+            var elTop = $el.offset().top;
+            var elBottom = elTop + $el.outerHeight();
+
+            // 进入视口 → 加 is-in 播放动画
+            if (elTop < winBottom + offset) {
+                $el.addClass('is-in');
+            }
+            // 完全离开视口 → 移除 is-in，下次回来重播
+            if (elBottom < winTop || elTop > winBottom) {
+                $el.removeClass('is-in');
+            }
+        });
+    }
+
+    function onScroll() {
+        if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(function () {
+                check();
+                ticking = false;
+            });
+        }
+    }
+
+    $(window).on('scroll resize', onScroll);
+    check();
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    bindHeaderScroll();
+    $(window).on('resize', bindHeaderScroll);
+
+    scrollFadeUp();
+
+});
+
+
+</script>

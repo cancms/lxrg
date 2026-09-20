@@ -1,0 +1,328 @@
+// Override this file to add your own SCSS styling.
+
+// 滚动条
+html::-webkit-scrollbar {width:4px;height: 8px;background-color: #F5F5F5;}
+html::-webkit-scrollbar-track {border-radius: 10px;background-color: #E2E2E2;}
+html::-webkit-scrollbar-thumb {border-radius: 10px; background-color: #333;}
+
+
+@font-face {
+    font-family: "Noto Sans SC";
+    font-display: swap; // 立刻用系统字体把文字显示出来，等自定义字体加载好了再无缝替换
+  }
+
+
+body {
+  // font-family:  "Noto Sans", sans-serif;
+      background: linear-gradient(180deg, #F6F7FA 0%, #EFF1F8 100%);
+}
+
+.header--fixed {
+  position: fixed;
+
+  .navbar {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 4rem 1rem;
+  }
+
+  #navbar-main .main-menu-item ul li .nav-link {
+    color: #fff;
+    font-size: 1.05rem;
+  }
+
+  .navbar .navbar-nav .nav-link.active {
+      span {
+        border-bottom: 2px solid #fff;
+        padding-bottom: 0.4rem;
+      }
+  }
+
+  .navbar-light .navbar-brand {
+    color: #fff;
+  }
+
+  #navbar-main  {
+    transition: 0.36s;
+  }
+  // 滚动后加的类, 滚动后加背景
+  #navbar-main.xg {
+        background: linear-gradient(180deg, #2D06A0 0%, #6013B1 100%);
+        padding: 3rem 1rem;
+  }
+
+}
+
+// 保持图片本身宽高比例；屏幕变宽 / 变窄的时候，高度跟随宽度自动变化（响应式等比容器）
+// 如果你 banner 上面还要叠加文字，外层相对定位，img 做底层，文字 absolute 浮在上层。
+// img 本身浏览器加载完图片，**自动按原图宽高比，width:100% 之后 height:auto 自动算高度，不用写死比例！**
+// 同时用`object‑fit:cover`做裁切效果，跟之前 background 的 cover 行为一模一样。
+.header-banner {
+  .b-scale {
+    display:block;
+    width:100%;
+    /* height不要写！浏览器自动读取图片本身宽高比算高度 */
+    max-height:750px; /* 可选，防止大屏下banner过高 */
+    object-fit:cover;
+    position: relative;
+
+    .image-wl{
+      display:block;
+      width:100%;
+      /* height不要写！浏览器自动读取图片本身宽高比算高度 */
+      max-height:750px; /* 可选，防止大屏下banner过高 */
+      object-fit:cover;
+    }
+  }
+
+  .banner-text{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items: end;
+      justify-content: start;
+      .content-wrapper {
+        background-color: transparent;
+      }
+      .banner-title1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        min-height: unset !important;
+      }
+  }
+}
+
+
+.home-section:first-of-type {
+    padding-top: 5rem;
+}
+.home-section {
+  background-color: unset;
+}
+
+// 元素滚动淡入
+/* 初始态：透明 + 向下偏移 */
+[data-fade="up"] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+/* 触发态：显示 + 归位 */
+[data-fade="up"].is-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 3.5rem;
+  background-color: #fff;
+  min-height: 50vh;
+}
+
+.home-team-members{
+
+  a:hover{
+    text-decoration: none;
+  }
+  .m-group-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .person-item {
+    margin-top: 2rem;
+  }
+
+  .m-image-wrap {
+    width: 11rem;
+    height: 14rem;
+    position: relative;
+    margin-top: 2rem;
+    .m-image{
+       width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+          width:100%;
+          height:100%;
+          object-fit: cover;
+          /* ✨ 左、底部对齐！裁切以左下角为基准 */
+          // object‑position: left bottom;
+        }
+        position: absolute;
+
+        background: linear-gradient(180deg, #6012B0 0%, #3108A2 100%);
+    }
+    .original{
+      background: none !important;
+        z-index: 1;
+            left: 0.5rem;
+            bottom: 0.5rem;
+    }
+    .bg-mask{
+        z-index: 0;
+    }
+  }
+
+  .m-intro {
+    padding: 0 0 0 3rem;
+    h3 {
+      a {color: #000;}
+      font-size: 1.4rem;
+      display: inline-block;
+      padding: 0 1rem 1.5rem 0;
+      border-bottom: 2px solid lightgray;
+    }
+    .m-role {
+      margin-left: 1.5rem;
+      font-size: 0.9rem;
+      color: #888;
+      font-weight: normal;
+    }
+    .desc {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .lead-icon-item {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+
+
+
+.lead-icon-item {
+  display:flex;
+  align-items:center;
+  .icon-wrap {
+      width:2.5rem;
+      height:2.5rem;
+      background-color:#6012B0; /*深紫色圆形背景*/
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:#ffffff;
+      font-size:1.1rem;
+  }
+  .icon-text {
+    margin-left: 1rem;
+    color: #666;
+  }
+}
+
+
+.common-page-wrap{
+  ol li {
+    margin: 1rem 0;
+  }
+}
+
+
+.page-publication-list{
+  .paper-item {
+    border-top: 1px solid #e2e8f0;
+    padding: 3rem 0;
+    text-align: justify;
+  }
+  .pub-icon {
+    // color: $text-primary-color;
+    font-size: 1rem;
+    // padding-right: 0;
+  }
+  .pub-title{
+    font-weight: bold;
+  }
+  .j-name {
+    font-style: italic;
+  }
+  .pub-pages {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .publication-type {
+    margin: 2rem 0 1rem 0;
+    // font-style: italic;
+  }
+  .pub-author {
+    margin: 1rem 0;
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
+
+.page-footer{
+      background: #030D26;
+      .foot-content1{
+        color: #fff;
+      }
+
+  .foot-content1  {
+    padding: 3rem 0 ;
+    font-size: 0.8rem;
+     i {
+        margin-right: 0.5rem;
+      }
+
+
+  }
+}
+
+
+@media (max-width: 478px) {
+
+   .content-wrapper{
+    padding: 2rem 1rem;
+   }
+
+  .header-banner .b-scale .image-wl {
+    height: 15rem;
+  }
+
+  .header--fixed {
+    .navbar-brand {
+      margin: 0 auto;
+    }
+    .navbar {
+      padding:  0 1rem;
+      background: linear-gradient(180deg, #2D06A0 0%, #6013B1 100%);
+    }
+    .navbar-light .navbar-toggler {
+      color: #fff;
+    }
+    #navbar-main .main-menu-item{
+      box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+      border-bottom: 1px solid #e5e5e5;
+      ul li .nav-link {
+            color: #333;
+            font-size: 1.05rem;
+      }
+    }
+  }
+  .home-team-members{
+    .m-image-wrap {
+      width: 7rem;
+      height: 9rem;
+    }
+    .m-intro {
+        padding: 0 0 0 1rem;
+    }
+  }
+}

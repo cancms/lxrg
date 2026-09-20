@@ -1,0 +1,91 @@
+selected_publications:
+  - title: "PRBCD-Net: Predict-Refining-Involved Bidirectional Contrastive Difference Network for Unsupervised Change Detection"
+    authors: "Ling Hu, Qichao Liu, Jia Liu, **Liang Xiao**"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "61: 1-17 (2023)"
+    year: 2023
+    links: []
+
+  - title: "Cross-Domain Few-Shot Hyperspectral Image Classification With Class-Wise Attention"
+    authors: "Wenzhen Wang, Fang Liu, Jia Liu, **Liang Xiao**"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "61: 1-18 (2023)"
+    year: 2023
+    links: []
+
+  - title: "Cross-Modal Graph Knowledge Representation and Distillation Learning for Land Cover Classification"
+    authors: "Wenzhen Wang, Fang Liu, Wenzhi Liao, **Liang Xiao**"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "61: 1-18 (2023)"
+    year: 2023
+    links: []
+
+  - title: "A Novel Video Stabilization Model With Motion Morphological Component Priors"
+    authors: "Huicong Wu, **Liang Xiao**, Le Sun, Byeungwoo Jeon"
+    journal: "IEEE Trans. Multim."
+    journal_info: "25: 389-404 (2023)"
+    year: 2023
+    links: []
+
+  - title: "Evolving Connections in Group of Neurons for Robust Learning"
+    authors: "Jia Liu, Maoguo Gong, **Liang Xiao**, et.al"
+    journal: "IEEE Trans. Cybern."
+    journal_info: "52(5): 3069-3082 (2022)"
+    year: 2022
+    links: []
+
+  - title: "A Total Variation Regularized Bipartite Network for Unsupervised Change Detection"
+    authors: "Ling Hu, Jia Liu, **Liang Xiao**"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "60: 1-18 (2022)"
+    year: 2022
+    links: []
+
+  - title: "Graph Convolutional Sparse Subspace Coclustering With Nonnegative Orthogonal Factorization for Large Hyperspectral Images"
+    authors: "Nan Huang, **Liang Xiao**, Jianjun Liu, Jocelyn Chanussot"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "60: 1-16 (2022)"
+    year: 2022
+    links: []
+
+  - title: "A Bipartite Graph Partition-Based Coclustering Approach With Graph Nonnegative Matrix Factorization for Large Hyperspectral Images"
+    authors: "Nan Huang, **Liang Xiao**, Yang Xu, Jocelyn Chanussot"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "60: 1-18 (2022)"
+    year: 2022
+    links: []
+
+  - title: "Multilevel Superpixel Structured Graph U-Nets for Hyperspectral Image Classification"
+    authors: "Qichao Liu, **Liang Xiao**, Jingxiang Yang, Zhihui Wei"
+    journal: "IEEE Trans. Geosci. Remote. Sens."
+    journal_info: "60: 1-15 (2022)"
+    year: 2022
+    links: []
+
+  - title: "Self-Supervised Multi-Category Counting Networks for Automatic Check-Out"
+    authors: "Hao Chen, Yangzhun Zhou, Jun Li, Xiu-Shen Wei, **Liang Xiao**"
+    journal: "IEEE Trans. Image Process."
+    journal_info: "31: 3004-3016 (2022)"
+    year: 2022
+    links: []
+
+  - title: "Simultaneous Video Stabilization and Rolling Shutter Removal"
+    authors: "Huicong Wu, **Liang Xiao**, Zhihui Wei"
+    journal: "IEEE Trans. Image Process."
+    journal_info: "30: 4637-4652 (2021)"
+    year: 2021
+    links: []
+
+  - title: "Sparse Coding Driven Deep Decision Tree Ensembles for Nucleus Segmentation in Digital Pathology Images"
+    authors: "Jie Song, **Liang Xiao**, Mohsen Molaei, Zhichao Lian"
+    journal: "IEEE Trans. Image Process."
+    journal_info: "30: 8088-8101 (2021)"
+    year: 2021
+    links: []
+
+  - title: "A Truncated Matrix Decomposition for Hyperspectral Image Super-Resolution"
+    authors: "Jianjun Liu, Zebin Wu, **Liang Xiao**, Jun Sun, Hong Yan"
+    journal: "IEEE Trans. Image Process."
+    journal_info: "29: 8028-8042 (2020)"
+    year: 2020
+    links: []

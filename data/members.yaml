@@ -1,0 +1,88 @@
+
+members_manager:
+
+  - name: "肖亮"
+    group: "manager"
+    role: "教授"
+    email: "xiaoliang@mail.njust.edu.cn"
+    avatar: "images/members/xiao-liang.png"
+    detail_link: "https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=0Ca604ge!3!FaFPsimWxeA==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw="
+
+    description: |
+      人工智能应用基础、机器学习与智能信息处理等研究：计算机视觉与图像理解；光谱成像与智能解译系统应用；多模态遥感AI基础模型与垂直类行业应用模型；虚拟现实与智能图形等
+
+      前期合作研发[开源医学影像系统](http://www.farsight-toolkit.org/wiki/Roysam_Laboratory)等
+
+
+members_teacher:
+
+  - name: "李英华"
+    group: "teacher"
+    role: "教授"
+    email: "yinghua.li@njust.edu.cn"
+    avatar: "images/members/li-ying-hua.png"
+    detail_link: "https://teacher.njust.edu.cn/jsj/lyh/list.htm"
+
+    description: |
+      智能系统测试，可信人工智能，智能软件工程
+
+
+  - name: "张犬俊"
+    group: "teacher"
+    role: "教授"
+    email: "quanjunzhang@njust.edu.cn"
+    avatar: "images/members/zhang-quan-jun.png"
+    detail_link: "https://teacher.njust.edu.cn/jsj/zqj/list.htm"
+
+    description: |
+      当前研究方向聚焦于智能（大模型）软件工程，课题组隶属于国家级科技创新领军人才肖亮教授团队。
+
+
+
+  - name: "杨劲翔"
+    group: "teacher"
+    role: "副教授"
+    email: "yang123jx@njust.edu.cn"
+    avatar: "images/members/yang-jin-xiang.jpg"
+    detail_link: "https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=QR7IctYsYKr0kSAohKpiBQ==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw="
+
+    description: |
+      研究方向: 遥感信息处理，智能光谱成像。
+
+
+
+
+  - name: "刘芳"
+    group: "teacher"
+    role: "副教授"
+    email: "liufang_cs@njust.edu.cn"
+    avatar: "images/members/liu-fang.jpg"
+    detail_link: "https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=VabiPchMdpzh3y!SyKN6qQ==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw="
+
+    description: |
+      研究方向: 图像处理、遥感图像解译、低空遥感信息处理、“低小慢”目标识别等。
+
+
+
+  - name: "刘嘉"
+    group: "teacher"
+    role: "副教授"
+    email: "omegaliuj@gmail.com"
+    avatar: "images/members/liu-jia.jpg"
+    detail_link: "https://gsmis.njust.edu.cn/open/TutorInfo.aspx?dsbh=rZgYIhJ9JIyPRyrAYpBP3g==&yxsh=z70ppxVSQAs=&zydm=SwsWR9zpmmw="
+
+    description: |
+      研究方向: 计算智能，图像理解。
+
+
+
+  - name: "陈璟洲"
+    group: "teacher"
+    role: "硕士生导师"
+    email: "jzchen@njust.edu.cn"
+    avatar: "images/members/cheng-jing-zhou.jpg"
+    detail_link: "https://teacher.njust.edu.cn/jsj/cjz/list.htm"
+
+    description: |
+      研究方向: 空天信息处理：目标检测、语义分割、变化检测；计算机视觉：多粒度视觉语义结构先验建模；机器学习：深度学习、字典学习、多模态表征学习。
+
